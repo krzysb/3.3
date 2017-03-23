@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Przykładowa strona</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<style>
+    #chatWindow{
+        height: 200px;
+        overflow: auto;
+        border:1px solid #eee;
+        padding: 15px 0px;
+    }
+    .chatRow{
+        border-bottom: 1px dotted #eee;
+        
+    }
+    .status{
+        font-style: italic;
+    }
+    .name{
+        font-weight: bold;
+    }
+    .time{
+        opacity: 0.7;
+    }
+    </style>
+
+</head>
+
+<body style="background:#ddd;">
+<div class="container" style="background:#fff;margin-top:20px;padding:20px 0px;">
+    
+   
+<div class="container" >
+<div class="row justify-content-md-center">
+      
+       
+       
+       <div id="chat" class="col-md-4">
+        
+            <div class="form-group" >
+                <input type="name" class="form-control" id="name" placeholder="Podaj swoje imię">
+            </div>
+            <button class="btn btn-primary" id="join">Dołącz</button>
+                  
+        <hr>
+        <div id="chatWindow"style="border:1px solid #eee;">
+<!--
+            <div id="chatRow">
+                <span class="time">15:20:32</span>
+                <span class="status">Krzysiek dołączył do czatu</span>
+            
+            </div>
+            <div id="chatRow">
+                <span class="time">15:22:20</span>
+                <span class="name">Krzysiek</span>
+                <span class="message">Hej</span>
+            </div>
+            <div id="chatRow">
+                <span class="time">15:22:50</span>
+                <span class="name">Tomek</span>
+                <span class="message">No hej</span>
+            </div>
+-->
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <textarea class="form-control" id="message"  rows="3" placeholder="Wiadomość..."></textarea>
+        </div>
+        <button class="btn btn-primary float-right" id="submit" disabled>Wyślij</button>
+        </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
